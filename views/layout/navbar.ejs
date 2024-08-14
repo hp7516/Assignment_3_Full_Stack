@@ -1,0 +1,17 @@
+<nav class="navbar" style="background-color: black ; color: white;">
+    <h1 class="logo1"><span>Book</span>DriveTest</h1>
+    <ul class="nav-links">
+        <% if (!user) { %>
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+            <% } else { %>
+                <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+               
+                    <li><a class="dropdown-item" href="/g2">G2 Test</a></li>
+                    <li><a class="dropdown-item" href="/g">G Test</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                <% } %>
+    </ul>
+</nav>
+
